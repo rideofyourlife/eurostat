@@ -180,7 +180,7 @@ get_eurostat <- function(id,
     }
     
     # No cache for json
-    if (is.null(filters) || identical(filters, "none")) {
+    if (is.null(filters) || !identical(filters, "none")) {
       cache <- FALSE
     }
     
